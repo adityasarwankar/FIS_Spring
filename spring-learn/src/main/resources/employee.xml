@@ -38,7 +38,7 @@
 		<property name="name" value="js" />
 	</bean>
 
-	<bean id="dao" class="com.fis.springlearn.bean.dao.EmployeeDao">
+	<!-- <bean id="dao" class="com.fis.springlearn.bean.dao.EmployeeDao">
 
 	</bean>
 	<bean id="service"
@@ -49,6 +49,6 @@
 		class="com.fis.springlearn.bean.controller.EmployeeController">
 		<property name="employeeService" ref="service"></property>
 	</bean>
-
+ -->
 
 </beans>

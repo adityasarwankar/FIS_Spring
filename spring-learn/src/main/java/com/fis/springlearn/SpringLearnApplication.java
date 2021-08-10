@@ -11,7 +11,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
+	
 import com.fis.springlearn.bean.Employee;
 
 @SpringBootApplication
@@ -25,6 +25,8 @@ public class SpringLearnApplication {
 		// displayCountry();
 		//displayCountries();
 		displayEmployee();
+		
+		
 	}
 	static void displayEmployee() {
 		LOGGER.info("START");
