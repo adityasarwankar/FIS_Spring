@@ -7,10 +7,11 @@ public class Department {
 	private static final Logger LOGGER = LoggerFactory.getLogger(Department.class);
 	int id;
 	String name;
-	
+
 	public Department() {
 		LOGGER.debug("Inside Department Const");
 	}
+
 	public int getId() {
 		return id;
 	}
@@ -26,6 +27,7 @@ public class Department {
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	@Override
 	public String toString() {
 		return "Department [id=" + id + ", name=" + name + ", getId()=" + getId() + ", getName()=" + getName()
