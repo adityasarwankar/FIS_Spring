@@ -10,5 +10,5 @@
 	<bean id="dateFormat1" class="java.text.SimpleDateFormat">
 		<constructor-arg value="dd/MM/yyyy" />
 	</bean>
-	
+
 </beans>
