@@ -1,13 +1,11 @@
 package com.fis.springlearn;
 
-import java.util.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -21,6 +19,7 @@ public class SpringLearnApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringLearnApplication.class, args);
 		displayDate();
+		displayCountry();
 	}
 	static void displayDate()  {
 		LOGGER.info("START");
@@ -43,5 +42,11 @@ public class SpringLearnApplication {
 			e.printStackTrace();
 		}
 		LOGGER.info("END");
+	}
+	
+	static void displayCountry() {
+		ApplicationContext context = new ClassPathXmlApplicationContext("country.xml");
+		Country country = context.getBean("country", Country.class);
+		LOGGER.debug("Country : {}", country.toString());
 	}
 }
