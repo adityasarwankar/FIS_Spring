@@ -11,6 +11,7 @@ public class Employee {
 	private Integer id;
 	private String name;
 	private String emailId;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -26,7 +27,7 @@ public class Employee {
 	public String getEmail() {
 	    return emailId;
 	  }
-	public void setEmail(String salary) {
+	public void setEmail(String emailId) {
 	    this.emailId = emailId;
 	  }
 	
